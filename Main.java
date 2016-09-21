@@ -7,6 +7,7 @@ public class Main{
 		do{
 			verMenu();
 			System.out.println("introduzca una opcion");
+			try{
 			opc=Integer.parseInt(sc.nextLine());
 			switch (opc){
 			case 1:
@@ -19,6 +20,9 @@ public class Main{
 			case 4:
 				default:
 					System.out.println("ha elegido salir");
+			}
+			}catch(NumberFormatException ex){
+				System.out.println("No se puede realizar la operacion compruebe ha intorducido numero enteros");
 			}
 			
 			
